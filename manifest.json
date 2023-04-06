@@ -1,0 +1,15 @@
+{
+	"name": "3d",
+    "short_name": "3d",
+	"icons": [
+        {
+            "src": "./images//1024.png",
+            "sizes":"1024x1024",
+            "type": "image/png"
+        }
+    ],
+	"start_url": "./",
+	"display": "standalone",
+	"background_color": "#fff",
+	"theme_color": "#fff"
+}

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1 {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  height: 68px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
