@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="manifest" href="manifest.json">
-  <title>3D Creater</title>
-</head>
-<body>
-  <h1>Hello World!!</h1>
-  <p>learm</p>
-</body>
-<script>
-  if ('sw' in navigator) {
-  window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js') // serviceWorker 파일 경로
-          .then((reg) => {
-              console.log('Service worker registered.', reg);
-          })
-          .catch(e => console.log(e));
-      });
-  }
-</script>  
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
+
+    <script type="module" src="sw.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>3D Creater</title>
+  </head>
+  <body>
+    <header class="bar bar-nav bar-light bg-faded bg-primary">
+      <h1 class="title">3D Creater</h1>
+    </header>
+
+    <nav class="bar bar-tab bar-light bg-faded">
+      <a class="tab-item active" role="button">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">Home</span>
+      </a>
+      <a class="tab-item" role="button">
+        <span class="icon icon-person"></span>
+        <span class="tab-label">Profile</span>
+      </a>
+      <a class="tab-item bg-primary bar-dark" role="button">
+        <span class="icon icon-star-filled"></span>
+        <span class="tab-label">Favorites</span>
+      </a>
+    </nav>
+
+    <main class="content content-padded">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam adipisci in voluptates voluptatum assumenda, eaque illum impedit ex sit omnis? Accusantium fugit nulla inventore non rerum temporibus, quidem quis cupiditate.
+    Repudiandae facilis est explicabo. Nemo maxime rerum, deserunt, dolorum laudantium recusandae nam culpa impedit fugit voluptatem dolor sit quasi eligendi ratione? Officiis quae soluta corrupti modi rerum provident recusandae itaque.
+    Error dicta impedit nam nihil, molestiae voluptas amet repellendus laboriosam alias, assumenda ipsum, doloremque voluptate quidem ullam? Quo repellat quisquam vel perferendis. Officia inventore a aliquid modi cum asperiores officiis!
+    Totam fugit dolores nesciunt ipsa odit iure cum excepturi consectetur nobis libero accusantium quas, sed illo iste enim, rem maiores. Quae praesentium corrupti ipsam. Facilis quisquam veritatis asperiores nulla reiciendis.
+    Quibusdam doloribus sapiente architecto libero. Voluptates distinctio, impedit harum et praesentium possimus beatae minima veniam cumque assumenda voluptate corrupti doloremque, magnam aliquam illum adipisci debitis! Sed dolores illum quos blanditiis.
+    Delectus non voluptatum facere ullam, rerum quaerat aliquam sunt. Maiores eligendi dolorem placeat error, similique eaque nostrum molestias nesciunt inventore quas esse necessitatibus repudiandae nisi ullam maxime aperiam nulla unde.
+    Corporis sequi rem velit esse aperiam, laudantium atque laborum praesentium aut eligendi at officia accusantium, a minus quos? Nobis aspernatur ab laborum porro incidunt eaque in recusandae tempora provident perspiciatis.
+    Similique dolorum asperiores quos iure. Quod totam at rerum! Totam obcaecati velit maxime cum. Quae magni unde beatae delectus cum eaque ex aliquid quos quas, non aspernatur quibusdam est. Earum?</main>
+  </body>
 </html>
